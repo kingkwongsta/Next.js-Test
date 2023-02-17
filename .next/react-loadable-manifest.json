@@ -1,1 +1,14 @@
-{}
+{
+  "../nft/node_modules/alchemy-sdk/dist/esm/index-d858fe2d.js -> ./alchemy-provider-4b3a5177.js": {
+    "id": "../nft/node_modules/alchemy-sdk/dist/esm/index-d858fe2d.js -> ./alchemy-provider-4b3a5177.js",
+    "files": [
+      "static/chunks/nft_node_modules_alchemy-sdk_dist_esm_alchemy-provider-4b3a5177_js.js"
+    ]
+  },
+  "../nft/node_modules/alchemy-sdk/dist/esm/index-d858fe2d.js -> ./alchemy-websocket-provider-03f0d8e6.js": {
+    "id": "../nft/node_modules/alchemy-sdk/dist/esm/index-d858fe2d.js -> ./alchemy-websocket-provider-03f0d8e6.js",
+    "files": [
+      "static/chunks/nft_node_modules_alchemy-sdk_dist_esm_alchemy-websocket-provider-03f0d8e6_js.js"
+    ]
+  }
+}

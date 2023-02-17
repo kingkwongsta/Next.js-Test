@@ -8,27 +8,26 @@ const config = {
 const alchemy = new Alchemy(config);
 
 const main = async () => {
-  // Contract address
+  //   Contract address
   const address = "0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D";
 
   // Flag to omit metadata
   const omitMetadata = false;
 
   // Get all NFTs
-  //   const { nfts } = await alchemy.nft.getNftsForContract(address, {
-  //     omitMetadata: omitMetadata,
-  //   });
-  const response = await alchemy.nft.getNftsForContract(address, {
+  const { nfts } = await alchemy.nft.getNftsForContract(address, {
     omitMetadata: omitMetadata,
   });
 
-  //   let i = 1;
+  let i = 0;
+  let nftStore = [];
 
-  //   for (let nft of nfts) {
-  //     console.log(`${i}. ${nft.rawMetadata.image}`);
-  //     i++;
-  //   }
-  return response;
+  for (let nft of nfts) {
+    let temp = nft.rawMetadata.image.slice(7);
+    nftStore[i] = `https://ipfs.io/ipfs/${temp}`;
+    i++;
+  }
+  return nftStore;
 };
 
 const runMain = async () => {
